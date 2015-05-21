@@ -122,7 +122,12 @@ localforage.setItem('key', 'value').then(function(value) {
 
 localForage relies on native [ES6 Promises](http://www.promisejs.org/), but
 [ships with an awesome polyfill](https://github.com/jakearchibald/ES6-Promises)
-for browsers that don't support ES6 Promises yet.
+for browsers that don't support ES6 Promises yet. If you're already using your own polyfill for promises, you could use localForage's no-promises-pollyfill version:
+
+```html
+<script src="localforage.nopromises.js"></script>
+```
+
 
 ## Storing Blobs, TypedArrays, and other JS objects
 
